@@ -12,8 +12,10 @@
 
   --logo-font-size:26px;
   --primary-font-size:14px;
+  --portfolio-font-size:16px;
   --first-title-size:44px;
   --secondary-title-size:36px;
+  --portfolio-title-size:18px;
   --title-line-height:1.17;
 }
 
@@ -30,10 +32,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-header {
-  background-color: var(--primary-white-color);
-}
-
 .list {
   padding: 0;
   margin: 0;
@@ -48,15 +46,9 @@ header {
   padding-right: 15px;
 }
 
-.container.flex {
-  display: flex;
-  justify-content: center;
-}
-
 .container.no-padding{
   padding:0;
 }
-
 
 .link {
   text-decoration: none;
@@ -115,7 +107,8 @@ p{
 
 /* Site nav */
 
-.header-nav{
+.header{
+  background-color: var(--primary-white-color);
   border-bottom: 1px solid var(--primary-text-color);
 }
 
@@ -131,7 +124,6 @@ p{
 .contacts{
   margin-left: auto;
 }
-
 
 .site-nav .link,
 .contacts .link{
@@ -165,8 +157,12 @@ p{
   color: var(--accent-color);
 }
 
-.link.current:hover {
+.site-nav .link.current:hover {
   color: var(--common-title-color);
+}
+
+.contacts .link.current:hover {
+  color: var(--primary-text-color);
 }
 
 /* Section */
@@ -216,7 +212,9 @@ p{
 /* Hero */
 
 .hero{
-  padding: 0;
+  width: 1600px;
+  height: 600px;
+  padding: 200px 452px;
   background-color: var(--footer-color);
   text-align: center;
 }
@@ -234,6 +232,7 @@ p{
 }
 
 .hero .button{
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -273,8 +272,18 @@ p{
   background-color: var(--footer-color);
 }
 
+.footer .container{
+  display: flex;
+  align-items: center;
+}
+
+.address-block{
+  margin: 60px 0;
+}
+
 .address{
   color: var(--primary-white-color);
+  font-style: inherit;
 }
 
 .link-footer{
@@ -284,6 +293,12 @@ p{
 .link-footer:hover,.link-footer:focus {
   color: var(--accent-color);
 }
+
+.logo-footer{
+  display: block;
+  margin-bottom: 20px;
+}
+
 .logo-footer>span{
   color: var(--primary-white-color);
 }
@@ -294,6 +309,14 @@ p{
 
 .works, .works-nav{
   background-color: var(--primary-white-color);
+}
+
+.works-nav .button{
+  color: var(--primary-black-color);
+
+  font-weight: 500;
+  font-size: var(--portfolio-font-size);
+  line-height: 1.63;
 }
 
 .works-nav-list{
@@ -336,14 +359,14 @@ p{
   margin: 0;
   color: var(--common-title-color);
   font-weight: 700;
-  font-size: 18px;
+  font-size: var(--portfolio-title-size);
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .description-container>.type{
   color: var(--primary-text-color);
-  font-size: 16px;
+  font-size: var(--portfolio-font-size);
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
