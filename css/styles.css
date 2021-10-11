@@ -8,6 +8,8 @@
   --hero-bg-color: #2F303A;
   --secondary-white-color:#F5F4FA;
   --common-title-color: #212121;
+  --header-border-color: #ECECEC;
+  --works-border-color: #EEEEEE;
   --footer-color: #2F303A;
   --footer-hyperlink-color:rgba(255, 255, 255, 0.6);
 
@@ -24,7 +26,6 @@ body {
   background-color: #E5E5E5;
   color: var(--primary-text-color);
 
-  width: 1600px;
   font-family: Roboto, sans-serif;
   font-size: var(--primary-font-size);
   line-height: 1.71;
@@ -140,7 +141,7 @@ p{
 
 .header{
   background-color: var(--primary-white-color);
-  border-bottom: 1px solid var(--primary-text-color);
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 .site-nav{
@@ -154,15 +155,15 @@ p{
 .site-nav .link,
 .contacts .link{
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   font-weight: 500;
   line-height: 1.14;
 }
 
 .contacts li + li, .site-nav li + li {
-  margin-left: 12px;
+  margin-left: 50px;
 }
 
 
@@ -231,17 +232,14 @@ p{
 /* Hero */
 
 .hero{
-  width: 1600px;
-  height: 600px;
-  padding: 200px 452px;
+  padding: 200px 0;
   background-color: var(--hero-bg-color);
   text-align: center;
 }
 
 .hero-title {
-  margin-top: 0;
-  margin-bottom: 30px;
-
+  margin: 0 auto 30px auto;
+  width: 696px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: var(--first-title-size);
@@ -259,6 +257,10 @@ p{
 }
 
 /* Peculiarities */
+
+.peculiarities{
+  padding-bottom: 0;
+}
 
 .peculiarities-item{
   width: 270px;
@@ -281,8 +283,8 @@ p{
   width: 270px;
 }
 
-.command-img, .command-role{
-  margin-bottom: 30px;
+.command-description-container{
+  margin: 30px auto;
 }
 
 .command-name{
@@ -301,10 +303,7 @@ p{
 
 .footer{
   background-color: var(--footer-color);
-}
-
-.address-block{
-  margin: 60px 0;
+  padding: 60px 0;
 }
 
 .address{
@@ -312,11 +311,16 @@ p{
   font-style: inherit;
 }
 
+.address-item{
+  margin-bottom: 9px;
+}
+
 .link-footer{
   color: var(--footer-hyperlink-color);
 }
 
-.link-footer:hover,.link-footer:focus {
+.link-footer:hover,.link-footer:focus, 
+.link-footer-primary:hover, .link-footer-primary:focus{
   color: var(--accent-color);
 }
 
@@ -333,8 +337,8 @@ p{
 
 /* Works */
 
-.works, .works-nav{
-  background-color: var(--primary-white-color);
+.works-nav{
+  margin-bottom: 50px;
 }
 
 .works-nav .button{
@@ -370,7 +374,7 @@ p{
 .works-sample{
   margin: 15px;
   width: 370px;
-  border-bottom: 1px solid var(--primary-text-color);
+  border: 1px solid var(--works-border-color);
 }
 
 .works-description-container{
