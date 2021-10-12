@@ -201,18 +201,8 @@ p{
   margin: 0;
 }
 
-.peculiarities-title{
-  margin-bottom: 10px;
-
-  color: var(--common-title-color);
-  font-weight: 700;
-  font-size: var(--primary-font-size);
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
 .section-title {
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 50px;
 
   color: var(--common-title-color);
@@ -220,6 +210,7 @@ p{
   font-size: var(--secondary-title-size);
   line-height: 1.17;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .section{
@@ -256,7 +247,7 @@ p{
   padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 }
 
@@ -269,6 +260,21 @@ p{
 .peculiarities-item{
   width: 270px;
 }
+
+.peculiarities-title{
+  padding-bottom: 10px;
+
+  color: var(--common-title-color);
+  font-weight: 700;
+  font-size: var(--primary-font-size);
+  line-height: 1.17;
+  text-transform: uppercase;
+}
+
+.peculiarities-item p{
+  padding: 3px 0;
+}
+
 
 /* Samples */
 
@@ -315,7 +321,7 @@ p{
   font-style: inherit;
 }
 
-.address-item{
+.address-item:not(:last-child) {  
   margin-bottom: 9px;
 }
 
@@ -345,18 +351,6 @@ p{
   margin-bottom: 50px;
 }
 
-.works-nav .button{
-  font-weight: 500;
-  font-size: var(--portfolio-font-size);
-  line-height: 1.63;
-}
-
-.works-nav-list{
-  padding: 0;
-  list-style: none;
-  margin-bottom: 34px;
-}
-
 .works-nav-item {
   align-self: flex-start;
 }
@@ -367,6 +361,10 @@ p{
 
 .works-nav .button {
   padding: 6px 22px;
+  font-weight: 500;
+  font-size: var(--portfolio-font-size);
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 .works-list{
@@ -386,7 +384,7 @@ p{
 }
 
 .works-name {
-  margin: 0;
+  margin-bottom: 3px;
   color: var(--common-title-color);
   font-weight: 700;
   font-size: var(--portfolio-title-size);
@@ -396,6 +394,6 @@ p{
 
 .works-type{
   font-size: var(--portfolio-font-size);
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.03em;
 }
