@@ -88,6 +88,7 @@ body {
 .link {
   text-decoration: none;
   color: inherit;
+  letter-spacing: inherit;
 }
 
 p{
@@ -164,6 +165,7 @@ p{
 
   font-weight: 500;
   line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts li + li, .site-nav li + li {
@@ -327,6 +329,7 @@ p{
 
 .link-footer{
   color: var(--footer-hyperlink-color);
+  letter-spacing: 0.03em;
 }
 
 .link-footer:hover,.link-footer:focus, 
